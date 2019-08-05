@@ -46,7 +46,7 @@ var esMayorEdad = function (persona) {
 //const esMayorEdad = (persona) => {   
   //Si la funcion tiene un solo parametro, se pueden omitir los paréntesis
   //Si solo retorna un valor se puedne omitir las llaves
-  // desestructurando la funcion colocamos los parentesis y las llaves y dentro el parametro del objeto al que queremos
+  // desestructurando la funcion colocamos los parentesis y las llaves dentro el parametro del objeto al que queremos
   // acceder ({edad})
 
 const esMayorEdad = ({ edad }) => edad >= MAYORIA_EDAD
