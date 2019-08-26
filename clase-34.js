@@ -15,7 +15,6 @@ function obtenerPersona(id, callback) {
 obtenerPersona(1, function(data) {
   console.log(data)
   console.log(`Hola, mi nombre es ${data.name}`)
-  
   obtenerPersona(2, function(data){
     console.log(data)
     console.log(`Hola, mi nombre es ${data.name}`)
