@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambios contexto</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const sacha = {
+        nombre: 'Sacha',
+        apellido: 'Lifsyc'
+    }
+    const yesika = {
+            nombre: 'Yesika',
+            apellido: 'Cortés'
+        }
+    function saludar(saludo = 'Hola') {
+        console.log(`${saludo}, mi nombre es ${this.nombre}`)
+    }
+
+    /* const saludarASacha = saludar.bind(sacha)
+    const saludarAYesika = saludar.bind(yesika) */
+
+    /* setTimeout(saludar.bind(sacha, 'Hola che'), 1000) */
+
+    /* saludar.call(sacha,'Hola che') */
+
+    saludar.apply(sacha,['Hola che'])
+
+</script>
+</html>
